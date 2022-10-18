@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="css/slideShow.css">
+    <link rel="stylesheet" href="css/slideShow_theme.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header ==================== -->
+    <header class="header">
+        <div class="auto_container">
+            <div class="header_inner">
+                <div class="lang">
+                    <div class="lang_icon">
+                        <img src="images/lan.svg" alt="">
+                    </div>
+                    <div class="select_language">
+                        <div class="current_lang">
+                            <div>
+                                <a href="#">
+                                    Русский
+                                </a>
+                            </div>
+                            <div class="pyramid">
+                                <img src="images/strelka.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="languages">
+                            <a href="#">
+                                Русский
+                            </a>
+                            <a href="#">
+                                Turkmen
+                            </a>
+                            <a href="#">
+                                English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo2.svg" alt="">
+                    </a>
+                </div>
+                <div class="head_right">
+                    <form action="#" class="form">
+                        <div class="input">
+                            <input type="text" placeholder="Поиск">
+                        </div>
+                        <button class="search">
+                            <img src="images/lupa.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+                <button type="button" class="hamburg">
+                    <span></span>
+                </button>
+            </div>
+        </div> <!-- auto_container -->
+        <div class="navs_section" id="nav">
+            <div class="auto_container">
+                <div class="navs_inner">
+                    <div class="search_mobile">
+                        <form action="#" class="form">
+                            <div class="input">
+                                <input type="text" placeholder="Поиск">
+                            </div>
+                            <button class="search">
+                                <img src="images/lupa.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="menu">
+                        <div class="span"></div>
+                        <div class="menu_text">
+                            <div class="hover_menu">
+                                Разделы
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide_menu">
+                        <a href="#">
+                            Политика
+                        </a>
+                        <a href="#">
+                            Экономика
+                        </a>
+                        <a href="">
+                            Общество
+                        </a>
+                        <a href="#">
+                            Культура
+                        </a>
+                        <a href="#">
+                            Спорт
+                        </a>
+                        <a href="#">
+                            Рубрики года
+                        </a>
+                        <a href="">
+                            Общество
+                        </a>
+                        <a href="#">
+                            Спорт
+                        </a>
+                        <a href="#">
+                            Рубрики года
+                        </a>
+                    </div>
+                    <nav class="navs">
+                        <div class="link ">
+                            <span class="icons">
+                                <img src="images/inbox.svg" alt="">
+                            </span>
+                            <a href="archive.html" class="nav_link">
+                                Архив
+                            </a>
+                        </div>
+                        <div class="stick"></div>
+                        <div class="link link_media">
+                            <div class="icons">
+                                <img src="images/film.svg" alt="">
+                            </div>
+                            <div class="nav_link">
+                                <div class="hover_media">
+                                    Мультимедиа
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hide_media">
+                            <a href="gallery.html">
+                                Фоторепортаж
+                            </a><a href="video.html">
+                                Видеорепортаж
+                            </a>
+                        </div>
+                        <div class="stick"></div>
+                        <div class="link ">
+                            <div class="icons">
+                                <img src="images/phone-call.svg" alt="">
+                            </div>
+                            <a href="contact.html" class="nav_link">
+                                Обратная связь
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="langMobile">
+                        <div class="lang_icon">
+                            <img src="images/lan.svg" alt="">
+                        </div>
+                        <div class="select_language2">
+                            <div class="current_langMobile">
+                                <div>
+                                    <a href="#">
+                                        Русский
+                                    </a>
+                                </div>
+                                <div class="pyramid">
+                                    <img src="images/whitePyramid.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="languagesMobile">
+                        <a href="#">
+                            Русский
+                        </a>
+                        <a href="#">
+                            Turkmen
+                        </a>
+                        <a href="#">
+                            English
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- auto_container -->
+        </div>
+    </header>
+
+    <section class="section" id="intro">
+        <div class="auto_container">
+            <div class="which_page">
+                <div class="page_name">
+                    Главная
+                </div>
+                <div class="slash">\</div>
+                <div class="page_name">
+                    Политика
+                </div>
+                <div class="slash">\</div>
+                <div class="page_name">
+                    ПРЕЗИДЕНТ ГУРБАНГУЛЫ БЕРДЫМУХАМЕДОВ: Красота природы Отчизны – бесценное богатство
+                </div>
+            </div>
+            <div class="section_wrapper">
+                <div class="center">
+                    <div class="title">
+                        Политика
+                    </div>
+                    <div class="news_page-title">
+                        ПРЕЗИДЕНТ ГУРБАНГУЛЫ БЕРДЫМУХАМЕДОВ: Красота природы Отчизны – бесценное богатство
+                    </div>
+                    <div class="news_publish">
+                        <div class="publish_date">
+                            <span>
+                                Опубликованно
+                            </span>
+                            <span>
+                                27.12.2020
+                            </span>
+                        </div>
+                        <div class="views">
+                            <span class="view_icon">
+                                <img src="images/eye.svg" alt="">
+                            </span>
+                            <span>
+                                512
+                            </span>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="single_slider">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+
+
+                    <div class="multiple_slider">
+                        <div class="multiple_main">
+                            <a href="images/3.jpg" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/3.jpg" alt="">
+                            </a>
+                            <!-- <a href="images/4.jpg" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/4.jpg" alt="">
+                            </a>
+                            <a href="images/new__banner.png" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/new__banner.png" alt="">
+                            </a>
+                            <a href="images/milli.png" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/milli.png" alt="">
+                            </a> -->
+                            <!-- <a href="images/advert.pn" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/advert.png" alt="">
+                            </a> -->
+                            <!-- <a href="images/bann.png" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/bann.png" alt="">
+                            </a>
+                            <a href="images/3.jpg" class="multiple_photo" data-fancybox="gallery-1">
+                                <img src="images/3.jpg" alt="">
+                            </a> -->
+                        </div>
+                        <div class="multiple_aside">
+                            <a href="images/3.jpg" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/3.jpg" alt="">
+                            </a>
+                            <a href="images/4.jpg" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/4.jpg" alt="">
+                            </a>
+                            <a href="images/new__banner.png" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/new__banner.png" alt="">
+                            </a>
+                            <a href="images/milli.png" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/milli.png" alt="">
+                            </a>
+                            <a href="images/advert.pn" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/advert.png" alt="">
+                            </a>
+                            <a href="images/bann.png" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/bann.png" alt="">
+                            </a>
+                            <a href="images/3.jpg" class="multiple_item" data-fancybox="gallery">
+                                <img src="images/3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="news_page-text">
+                        <p class="para_text">
+                            В выходной день Президент Гурбангулы Бердымухамедов вместе с внуком Керимом отправился
+                            на
+                            прогулку в предгорья Копетдага.
+                        </p>
+                        <p class="para_text">
+                            В народе нынешний период года называется «кыркчилле» – зимнее сорокодневье, самое
+                            холодное
+                            время сезона. Так вот, снег, выпавший в кыркчилле, обещает напитать землю влагой, да так
+                            обильно, что упавшие в неё по весне семена обернутся щедрыми урожаями. Как отмечают
+                            земледельцы, затяжные осадки становятся бальзамом для почвы, а это значит, следует ждать
+                            высоких урожаев пшеницы и других сельскохозяйственных культур.
+                        </p>
+                        <p class="para_text">
+                            Дойдя вместе с внуком до южной окраины столицы, лидер нации, по привычке выходного дня,
+                            выполнил спортивные упражнения, а затем они вдвоем направились в сторону подвесной
+                            дороги.
+                        </p>
+                        <p class="para_text">
+
+                            Окружающий ландшафт этих мест завораживает своей зимней красотой, белые просторы
+                            производят
+                            величественное впечатление, чистый морозный воздух бодрит и наполняет энергией. Любуясь
+                            горными пейзажами, Президент Гурбангулы Бердымухамедов поведал внуку истории о могучей
+                            силе
+                            природы, её неисчерпаемых богатствах и неразрывной связи с ней человека.
+                        </p>
+                        <p class="para_text">
+                            Слушая рассказы деда, Керим старался запечатлеть чудесные виды предгорий и беломраморной
+                            столицы, находя через объектив фотоаппарата удачные ракурсы для съёмки панорамных кадров
+                            или
+                            отдельных выразительных деталей прекрасной зимней картины.
+                        </p>
+                        <p class="para_text">
+                            Эти фотографии останутся на добрую память, ведь снег в Туркменистане, да ещё такой
+                            обильный
+                            – довольно редкое явление. И то, что выпал он в канун Нового года, в народе считается
+                            хорошим знаком, предвещающим удачу и благополучие. Это настоящий праздничный подарок
+                            детворе, которая спешит наиграться в снежки и налепить снеговиков.
+                        </p>
+                        <p class="para_text">
+                            – Нынешние пушистые снежные сугробы, – говорит лидер нации Гурбангулы Бердымухамедов, –
+                            означают и хороший травостой в предгорных долинах и на степных пастбищах, пышные сады и
+                            тучные поля…
+                        </p>
+                        <p class="para_text">
+                            Стоит отметить, что бережное отношение к окружающей природе, её охрана – один из
+                            приоритетов
+                            государственной политики Туркменистана. Экологическое благополучие страны как залог
+                            здоровой
+                            жизни людей, выступает неотъемлемым условием дальнейшего процветания и прогресса.
+                        </p>
+                        <p class="para_text">
+                            Это относится, в первую очередь, к рациональному использованию земельно-водных ресурсов,
+                            борьбе с опустыниванием, охране заповедных уголков туркменской природы. В целях
+                            обеспечения
+                            экологической безопасности в стране реализуется Национальная лесная программа. Благодаря
+                            этому в пригороде столицы возникли уходящие за горизонт обширные лесополосы.
+                        </p>
+                        <p class="para_text">
+                            В настоящее время растущие в предгорьях сосны, и ели, туи и другие хвойные деревья
+                            покрылись
+                            белой шапкой снега, создавая атмосферу зимней сказки и приближающегося новогоднего
+                            праздника.
+                        </p>
+                        <p class="para_text">
+                            На станции канатной дороги Президент Гурбангулы Бердымухамедов вместе с внуком сели в
+                            кабинку фуникулера и отправились в воздушное путешествие над холмами, белыми волнами
+                            поднимающимися вверх, к отрогам Копетдага. Плавное движение по подвесному тросу
+                            захватывает
+                            дух от нарастающей высоты и открывающегося обзора предгорий. Пользуясь моментом, Керим
+                            снимает на фотоаппарат восхитительные зимние пейзажи.
+                        </p>
+                        <p class="para_text">
+                            Раскинувшаяся внизу равнина видна как на ладони, и эта картина столь прекрасна, что
+                            радует
+                            глаз, волнует сердце, поднимает настроение. Чистота снега добавляет этому уголку природы
+                            особое очарование.
+                        </p>
+                        <p class="para_text">
+                            Лидер нации рассказал внуку о том, что в результате успешной реализации масштабной
+                            экологической программы во всех регионах страны, и особенно в предгорьях, значительно
+                            улучшился микроклимат.
+                        </p>
+                        <p class="para_text">
+                            Как отметил глава государства, Ашхабад располагает благоприятными экологическими
+                            условиями,
+                            которые поддерживают и регулярно проводимые озеленительные кампании. В южной части
+                            столицы,
+                            в предгорьях, подрастают и расширяются хвойные леса. Сейчас они укутаны белым покрывалом
+                            снега, значит, весна в следующем году будет изобильной.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right_side break">
+                    <div class="title">
+                        Последние новости
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Политика</a>
+                            </div>
+                            <div class="news_text">
+                                В Ашхабаде состоялась презентация нового труда Президента Туркменистана
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Общество</a>
+                            </div>
+                            <div class="news_text">
+                                Заседание Кабинета Министров Туркменистана
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Политика</a>
+                            </div>
+                            <div class="news_text">
+                                Участникам международной научной онлайн-конференции «Нейтральный Туркменистан –
+                                ЮНЕСКО:
+                                международное сотрудничество в области истории и культуры»
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Политика</a>
+                            </div>
+                            <div class="news_text">
+                                Президент Туркменистана принял Чрезвычайного и Полномочного Посла Итальянской
+                                Республики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Спорт</a>
+                            </div>
+                            <div class="news_text">
+                                Выездное заседание Государственного совета безопасности Туркменистана
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_info">
+                        <div class="left_date">
+                            05.12
+                        </div>
+                        <div class="left_info">
+                            <div class="left_title">
+                                <a href="#">Культура</a>
+                            </div>
+                            <div class="news_text">
+                                Президент Туркменистана провёл совещание по развитию нефтегазового комплекса
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer ====================== -->
+    <div class="auto_container">
+        <div class="footer">
+            <div class="foot_logo">
+                <a href="#">
+                    <img src="images/Logo.svg" alt="">
+                </a>
+            </div>
+            <div class="foot_text">
+                Copyright 2012-2020 Государственное информационное агентство Туркменистана (TDH) - Туркменистан сегодня
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/news-slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
