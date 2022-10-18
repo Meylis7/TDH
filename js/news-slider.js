@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     // Test
 
-
+    
     $(".test_slider").slick({
         dots: false,
         slidesToShow: 1,
@@ -65,8 +65,8 @@ $(document).ready(function () {
         adaptiveHeight: true,
     });
 
+        // var multipleAsideCount = document.querySelectorAll('.multiple_item').length;
 
-    var multipleAsideCount = document.querySelectorAll('.multiple_item').length;
 
     // $('.multiple_main').slick({
     //     slidesToShow: 1,
@@ -74,29 +74,31 @@ $(document).ready(function () {
     //     arrows: false,
     //     dots: false,
     //     fade: true,
-    //     autoplay: false,
-    //     autoplaySpeed: 1000,
-    //     draggable: multipleAsideCount > 2 ? true : false,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
     //     asNavFor: '.multiple_aside',
+    
     // });
 
     // $(".multiple_aside").slick({
-    //     slidesToShow: multipleAsideCount > 3 ? 4 : 1,
+    //   slidesToShow: multipleAsideCount > 3 ? 4 : 1,
     //     slidesToScroll: 1,
     //     asNavFor: '.multiple_main',
     //     dots: false,
     //     autoplay: multipleAsideCount > 3 ? true : false,
     //     vertical: true,
-    //     centerMode: false,
-    //     focusOnSelect: false,
+    //     centerMode: true,
+    //     centerPadding: 0,
+    //     focusOnSelect: true,
     //     verticalSwiping: true,
     //     adaptiveHeight: true,
     //     arrows: false,
     //     prevArrow: false,
     //     nextArrow: false,
     //     mobileFirst: true,
-
+    
     // });
+
 });
 
 //  foreign ======================================
