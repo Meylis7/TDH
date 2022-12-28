@@ -1,0 +1,80 @@
+
+    <!-- Media =========================================================== -->
+    <section class="media_part">
+        <div class="auto_container">
+            <div class="media_part-wrap">
+                <div class="media_part-box">
+                    <div class="media_photo">
+                        <div class="media_photo-item big">
+                            <div class="media_photo-item-pic" href="images/blank-img.jpg" data-fancybox="media-1">
+                                <img src="images/2.jpg" alt="photo">
+                            </div>
+                        </div>
+
+                        <div class="media_photo-item">
+                            <div class="media_photo-item-pic" href="images/blank-img.jpg" data-fancybox="media-2"
+                                data-width="1500" data-height="1000">
+                                <img src="images/blank-img.jpg" alt="photo">
+                            </div>
+
+                            <div style="display: none;">
+                                <a href="images/blank-video.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-2" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-video.jpg">
+                                </a>
+                                <a href="images/blank-video.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-2" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-video.jpg">
+                                </a>
+                                <a href="images/blank-video.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-2" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-video.jpg">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="media_photo-item">
+                            <div class="media_photo-item-pic" href="images/blank-img.jpg" data-fancybox="media-3"
+                                data-width="1500" data-height="1000">
+                                <img src="images/blank-img.jpg" alt="photo">
+                            </div>
+
+                            <div style="display: none;">
+                                <a href="images/blank-img.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-3" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-img.jpg">
+                                </a>
+                                <a href="images/blank-img.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-3" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-img.jpg">
+                                </a>
+                                <a href="images/blank-img.jpg" data-fancybox-arrows="true" data-arrows="true"
+                                    data-fancybox="media-3" data-width="1500" data-height="1000"
+                                    data-thumb="images/blank-img.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media_video">
+                        <div class="media_video-item">
+                            <img src="images/blank-video.jpg" alt="video">
+                        </div>
+
+                        <div class="media_video-item">
+                            <img src="images/blank-video.jpg" alt="video">
+                        </div>
+
+                        <div class="media_video-item">
+                            <img src="images/blank-video.jpg" alt="video">
+                        </div>
+
+                        <div class="media_video-item">
+                            <img src="images/blank-video.jpg" alt="video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Media end ======================================================= -->

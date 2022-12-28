@@ -4,24 +4,17 @@ window.onscroll = function () {
 
 let intro = document.getElementById("intro");
 let nav_fixed = document.getElementById("nav");
+let to_top = document.getElementById("to-top");
 let fix = intro.offsetTop;
 function scrollFunc() {
     if (window.pageYOffset >= fix) {
         nav_fixed.classList.add("fix");
+        to_top.classList.add("fixed");
     } else {
         nav_fixed.classList.remove("fix");
+        to_top.classList.remove("fixed");
     }
 }
-
-// preloader fucntion =============================
-// 'use strict';
-// $(window).on('load', function () {
-//     $(".loader").fadeOut();
-//     $("#preloader").delay(400).fadeOut("slow");
-
-// });
-// preloader fucntion end =======================
-
 
 // Header
 
@@ -49,6 +42,11 @@ let video_item = document.querySelectorAll('.media_video-item');
 let modal_video = document.querySelector('.modal_video');
 let body = document.querySelector('body');
 
+let gal_item = document.querySelectorAll('.modal_gal-item');
+let fancy_close = document.querySelector('.fancybox-button--close');
+let modal_photo = document.querySelectorAll('.modal-photo');
+
+
 
 // console.log(burger);
 
@@ -73,6 +71,15 @@ window.onclick = function (e) {
     }
 
 
+    // modal_photo.forEach(modal_photo => {
+    //     if (modal_photo != undefined) {
+    //         modal_photo.classList.contains('active') && !e.target.closest('.fancybox modal_gal-item');
+    //         modal_photo.classList.remove('active')
+    //     }
+    // }
+    // );
+
+
     // if (selectElement('.player_bg').classList.contains('videoShow') && !e.target.closest('.player')) {
     //     selectElement('.player_bg').classList.remove('videoShow');
     //     selectElement('.player__video').pause();
@@ -92,6 +99,34 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 
+
+
+
+// Theme Change ====================================
+
+const toggleSwitch = document.querySelector('#theme-check');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+// Theme Change end ================================
+
+
+
+
+
+
 // =============================================
 
 if (video_item != undefined) {
@@ -105,6 +140,20 @@ if (video_item != undefined) {
         });
     })
 }
+
+
+if (gal_item != undefined) {
+    gal_item.forEach(x => {
+        x.addEventListener('click', function () {
+            sleep(2).then(() => {
+                modal_photo.forEach(p => {
+                    p.classList.add('disable');
+                })
+            });
+        });
+    })
+}
+
 
 
 

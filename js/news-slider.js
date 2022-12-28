@@ -156,3 +156,62 @@ $(".foreign__box").slick({
     ]
 
 });
+
+//  Colleag ======================================
+
+$(".colleag_slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    dots: false,
+    autoplaySpeed: 4500,
+    pauseOnHover: false,
+
+    infinite: true,
+    speed: 1000,
+    fade: false,
+    draggable: true,
+    lazyLoad: 'ondemand',
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+
+});
+
+// $(".modal_gal-box").slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     autoplay: false,
+//     dots: false,
+//     autoplaySpeed: 4500,
+//     pauseOnHover: false,
+
+//     infinite: true,
+//     speed: 1000,
+//     fade: false,
+//     draggable: true,
+//     lazyLoad: 'ondemand',
+
+// });
