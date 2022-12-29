@@ -1485,10 +1485,7 @@ table td {
     bottom: 0;
     left: 0;
     padding: 24px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.4;
-    color: #fff;
+
     width: calc(100% - 48px);
 }
 
@@ -1510,6 +1507,11 @@ table td {
     overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
 }
 
 .media_photo-item {
@@ -1870,11 +1872,13 @@ table td {
 
 /* Colleag =========================== */
 .colleag {
-    margin: 40px 0;
+    margin: 40px 0;   
 }
 
 .colleag_slider {
     padding: 24px 5px;
+    background: url("../images/colleauge-bg.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .colleag_slider-item {
@@ -1902,6 +1906,7 @@ table td {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
+    color: #fff;
 }
 
 /* Colleag end ======================= */
@@ -2637,6 +2642,10 @@ footer {
         display: none;
     }
 
+    .media_info h6 {
+        font-size: 20px;
+    }
+
     /* Magazine Page ===================== */
     .magazines {
         margin: 0 -20px;
@@ -2882,9 +2891,9 @@ footer {
     }
 
     /* Media Part ===================== */
-    .media_part {
+    /* .media_part {
         display: none;
-    }
+    } */
 
     .mobile-bn {
         display: none;
@@ -3024,6 +3033,10 @@ footer {
 
     .box .modal_gal-item:nth-last-child(-n+3) {
         display: none;
+    }
+
+    .media_info h6 {
+        font-size: 17px;
     }
 
 }
