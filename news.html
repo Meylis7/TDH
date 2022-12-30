@@ -19,177 +19,144 @@
 
 <body>
 
-    <!-- Header ==================== -->
-    <header class="header">
+    <!-- Header ============================================================ -->
+    <header class="new__header" id="header">
         <div class="auto_container">
-            <div class="header_inner">
-                <div class="lang">
-                    <div class="lang_icon">
-                        <img src="images/lan.svg" alt="">
-                    </div>
-                    <div class="select_language">
-                        <div class="current_lang">
-                            <div>
-                                <a href="#">
-                                    Русский
-                                </a>
-                            </div>
-                            <div class="pyramid">
-                                <img src="images/strelka.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="languages">
-                            <a href="#">
-                                Русский
-                            </a>
-                            <a href="#">
-                                Turkmen
-                            </a>
-                            <a href="#">
-                                English
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo2.svg" alt="">
-                    </a>
-                </div>
-                <div class="head_right">
-                    <form action="#" class="form">
-                        <div class="input">
-                            <input type="text" placeholder="Поиск">
-                        </div>
-                        <button class="search">
-                            <img src="images/lupa.svg" alt="">
-                        </button>
-                    </form>
-                </div>
-                <button type="button" class="hamburg">
-                    <span></span>
-                </button>
-            </div>
-        </div> <!-- auto_container -->
-        <div class="navs_section" id="nav">
-            <div class="auto_container">
-                <div class="navs_inner">
-                    <div class="search_mobile">
-                        <form action="#" class="form">
-                            <div class="input">
-                                <input type="text" placeholder="Поиск">
-                            </div>
-                            <button class="search">
+            <div class="header__inner">
+                <a href="#" class="head__logo">
+                    <img src="images/new_logo.png" alt="">
+                </a>
+                <div class="head__right">
+                    <form action="#" class="search__form">
+                        <div class="input__wrap">
+                            <input type="text" class="for__search" name="search" placeholder="Поиск">
+                            <button type="submit" class="input__magnify">
                                 <img src="images/lupa.svg" alt="">
                             </button>
-                        </form>
-                    </div>
-                    <div class="menu">
-                        <div class="span"></div>
-                        <div class="menu_text">
-                            <div class="hover_menu">
-                                Разделы
-                            </div>
                         </div>
-                    </div>
-                    <div class="hide_menu">
-                        <a href="#">
-                            Политика
-                        </a>
-                        <a href="#">
-                            Экономика
-                        </a>
-                        <a href="">
-                            Общество
-                        </a>
-                        <a href="#">
-                            Культура
-                        </a>
-                        <a href="#">
-                            Спорт
-                        </a>
-                        <a href="#">
-                            Рубрики года
-                        </a>
-                        <a href="">
-                            Общество
-                        </a>
-                        <a href="#">
-                            Спорт
-                        </a>
-                        <a href="#">
-                            Рубрики года
-                        </a>
-                    </div>
-                    <nav class="navs">
-                        <div class="link ">
-                            <span class="icons">
-                                <img src="images/inbox.svg" alt="">
-                            </span>
-                            <a href="archive.html" class="nav_link">
-                                Архив
-                            </a>
-                        </div>
-                        <div class="stick"></div>
-                        <div class="link link_media">
-                            <div class="icons">
-                                <img src="images/film.svg" alt="">
-                            </div>
-                            <div class="nav_link">
-                                <div class="hover_media">
-                                    Мультимедиа
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hide_media">
-                            <a href="gallery.html">
-                                Фоторепортаж
-                            </a><a href="video.html">
-                                Видеорепортаж
-                            </a>
-                        </div>
-                        <div class="stick"></div>
-                        <div class="link ">
-                            <div class="icons">
-                                <img src="images/phone-call.svg" alt="">
-                            </div>
-                            <a href="contact.html" class="nav_link">
-                                Обратная связь
-                            </a>
-                        </div>
-                    </nav>
-                    <div class="langMobile">
-                        <div class="lang_icon">
-                            <img src="images/lan.svg" alt="">
-                        </div>
-                        <div class="select_language2">
-                            <div class="current_langMobile">
-                                <div>
-                                    <a href="#">
-                                        Русский
-                                    </a>
-                                </div>
-                                <div class="pyramid">
-                                    <img src="images/whitePyramid.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="languagesMobile">
-                        <a href="#">
-                            Русский
-                        </a>
-                        <a href="#">
-                            Turkmen
-                        </a>
-                        <a href="#">
-                            English
-                        </a>
-                    </div>
+                    </form>
                 </div>
-            </div> <!-- auto_container -->
+                <div class="for__mobile">
+                    <div class="loupe">
+                        <img src="images/loupe.svg" alt="">
+                    </div>
+                    <button type="button" class="new__hamburg">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
+    <!-- Header end ======================================================== -->
+
+    <!-- Mobile Search  =====================================================-->
+    <section class="mobile__search">
+        <div class="auto_container">
+            <div class="mobile__inner">
+                <a href="#" class="mobile__logo">
+                    <img src="images/new_logo.png" alt="">
+                </a>
+                <form action="#" class="mobile__form">
+                    <div class="mobile_input__wrap">
+                        <input type="text" name="monbile__search" placeholder="Поиск">
+                        <button type="submit" class="mobile__magnify">
+                            <img src="images/lupa.svg" alt="">
+                        </button>
+                        <div class="mobile__close">
+                            <!-- <img src="imags/close_btn.svg" alt=""> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Search end ==================================================-->
+
+    <!-- Navs ============================================================== -->
+    <nav class="new__navs" id="nav">
+        <div class="auto_container">
+            <div class="navs__back ">
+                <div class="navs__inner">
+                    <div class="nav__col">
+                        <a href="#" class="nav__link">
+                            Политика
+                        </a>
+                        <a href="#" class="nav__link">
+                            Экономика
+                        </a>
+                        <a href="#" class="nav__link">
+                            Общество
+                        </a>
+                        <a href="#" class="nav__link">
+                            Культура
+                        </a>
+                        <a href="#" class="nav__link">
+                            Комментарии
+                        </a>
+                    </div>
+                    <div class="nav__col">
+                        <a href="#" class="nav__group">
+                            <div class="nav__icon">
+                                <img src="images/inbox.svg" alt="">
+                            </div>
+                            <div class="nav__icon--green">
+                                <img src="images/inbox_green.svg" alt="">
+                            </div>
+                            <span>
+                                Архив
+                            </span>
+                        </a>
+                        <div class="nav__group">
+                            <div class="nav__icon">
+                                <img src="images/film.svg" alt="">
+                            </div>
+                            <div class="nav__icon--green">
+                                <img src="images/film_green.svg" alt="">
+                            </div>
+                            <span class="open__link">
+                                Мультимедиа
+                            </span>
+                            <div class="hidden__media">
+                                <a href="#" class="link__media">
+                                    Фоторепортаж
+                                </a>
+                                <a href="#" class="link__media">
+                                    Видеорепортаж
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav__group">
+                            <div class="new__lang">
+                                <div class="lang__item">
+                                    <img src="images/lang (1).png" alt="">
+                                </div>
+                                <div class="lang__item">
+                                    <img src="images/lang (2).png" alt="">
+                                </div>
+                                <div class="lang__item">
+                                    <img src="images/lang (3).png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="mob__lang">
+                            <div class="new__lang">
+                                <div class="lang__item">
+                                    <img src="images/lang (1).png" alt="">
+                                </div>
+                                <div class="lang__item">
+                                    <img src="images/lang (2).png" alt="">
+                                </div>
+                                <div class="lang__item">
+                                    <img src="images/lang (3).png" alt="">
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navs ============================================================== -->
 
     <section class="section" id="intro">
         <div class="auto_container">
@@ -263,25 +230,32 @@
                             </a> -->
                         </div>
                         <div class="multiple_aside">
-                            <a href="images/3.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".1s" data-fancybox="gallery">
+                            <a href="images/3.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".1s" data-fancybox="gallery">
                                 <img src="images/3.jpg" alt="">
                             </a>
-                            <a href="images/4.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".13s" data-fancybox="gallery">
+                            <a href="images/4.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".13s" data-fancybox="gallery">
                                 <img src="images/4.jpg" alt="">
                             </a>
-                            <a href="images/new__banner.png" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".17s" data-fancybox="gallery">
+                            <a href="images/new__banner.png" class="multiple_item wow fadeInRight"
+                                data-wow-duration=".3s" data-wow-delay=".17s" data-fancybox="gallery">
                                 <img src="images/new__banner.png" alt="">
                             </a>
-                            <a href="images/milli.png" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".2s" data-fancybox="gallery">
+                            <a href="images/milli.png" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".2s" data-fancybox="gallery">
                                 <img src="images/milli.png" alt="">
                             </a>
-                            <a href="images/advert.pn" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".23s" data-fancybox="gallery">
+                            <a href="images/advert.pn" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".23s" data-fancybox="gallery">
                                 <img src="images/advert.png" alt="">
                             </a>
-                            <a href="images/bann.png" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".27s" data-fancybox="gallery">
+                            <a href="images/bann.png" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".27s" data-fancybox="gallery">
                                 <img src="images/bann.png" alt="">
                             </a>
-                            <a href="images/3.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s" data-wow-delay=".3s" data-fancybox="gallery">
+                            <a href="images/3.jpg" class="multiple_item wow fadeInRight" data-wow-duration=".3s"
+                                data-wow-delay=".3s" data-fancybox="gallery">
                                 <img src="images/3.jpg" alt="">
                             </a>
                         </div>
@@ -530,6 +504,13 @@
             </div>
         </div>
     </div>
+    <!-- Footer end ================== -->
+
+    <!-- Top =================== -->
+    <span class="to-top" id="to-top">
+        <img src="images/top-arrow.png" alt="top-arrow">
+    </span>
+    <!-- Top =================== -->
 
 
     <script src="js/jquery.js"></script>
