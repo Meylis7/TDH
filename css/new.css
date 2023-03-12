@@ -1364,7 +1364,7 @@ table td {
     width: 50%;
     height: 240px;
     overflow: hidden;
-    background: rgba(130,130,130,.1);
+    background: rgba(130, 130, 130, .1);
 }
 
 .latest_item-photo img {
@@ -1448,7 +1448,7 @@ table td {
     margin-bottom: 15px;
     display: block;
     overflow: hidden;
-    background: rgba(130,130,130,.1);
+    background: rgba(130, 130, 130, .1);
 }
 
 .latest_row-item-photo img {
@@ -1879,11 +1879,11 @@ table td {
 
 /* Colleag =========================== */
 .colleag {
-    margin: 40px 0;   
+    margin: 40px 0;
 }
 
 .colleag_slider {
-    padding: 24px 5px;
+    padding: 36px 50px;
     background: url("../images/colleauge-bg.jpg") no-repeat center;
     background-size: cover;
 }
@@ -1896,8 +1896,8 @@ table td {
 }
 
 .colleag_slider-item-img {
-    width: 90px;
-    height: 60px;
+    width: 100%;
+    height: 80px;
     margin-bottom: 8px;
     display: block;
 }
@@ -1917,6 +1917,93 @@ table td {
 }
 
 /* Colleag end ======================= */
+
+/* Websites =========================== */
+.web {
+    margin: 40px 0;
+}
+
+.web_item {
+    width: calc(100% - 50px);
+    margin: 0 20px;
+    position: relative;
+    display: block;
+}
+
+.web_slider-2 .web_item {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+}
+
+.web_slider-2 .web_item-photo {
+    height: 100%;
+}
+
+.web_item-photo {
+    width: 100%;
+    height: 250px;
+    /* height: 200px; */
+    position: relative;
+}
+
+.web_item-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.web_item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 20px;
+    width: calc(100% - 40px);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    z-index: 3;
+}
+
+.web_item:hover .web_item-title::before {
+    top: 0;
+}
+
+.web_item-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    z-index: -2;
+}
+
+.web_item-title::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00A835;
+    transition: all .2s linear;
+    z-index: -1;
+}
+
+
+/* Websites end ======================= */
 
 
 /* New Index end ========================================================= */
@@ -2845,6 +2932,20 @@ footer {
     .modal_gal-item {
         height: 135px;
     }
+
+
+    /* Website ================================== */
+    .web_item {
+        margin: 0 10px;
+        width: calc(100% - 20px);
+    }
+
+    .web_item-photo {
+        height: 100%;
+    }
+
+    /* Website ================================== */
+
 }
 
 @media(max-width: 700px) {

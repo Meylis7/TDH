@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     // Test
 
-    
+
     $(".test_slider").slick({
         dots: false,
         slidesToShow: 1,
@@ -65,7 +65,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
     });
 
-        // var multipleAsideCount = document.querySelectorAll('.multiple_item').length;
+    // var multipleAsideCount = document.querySelectorAll('.multiple_item').length;
 
 
     // $('.multiple_main').slick({
@@ -77,7 +77,7 @@ $(document).ready(function () {
     //     autoplay: true,
     //     autoplaySpeed: 2000,
     //     asNavFor: '.multiple_aside',
-    
+
     // });
 
     // $(".multiple_aside").slick({
@@ -96,7 +96,7 @@ $(document).ready(function () {
     //     prevArrow: false,
     //     nextArrow: false,
     //     mobileFirst: true,
-    
+
     // });
 
 });
@@ -160,7 +160,47 @@ $(".foreign__box").slick({
 //  Colleag ======================================
 
 $(".colleag_slider").slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    dots: false,
+    autoplaySpeed: 4500,
+    pauseOnHover: false,
+
+    infinite: true,
+    speed: 1000,
+    fade: false,
+    draggable: true,
+    lazyLoad: 'ondemand',
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+
+});
+
+$(".web_slider").slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -198,6 +238,48 @@ $(".colleag_slider").slick({
     ]
 
 });
+
+$(".web_slider-2").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    dots: false,
+    autoplaySpeed: 4500,
+    pauseOnHover: false,
+
+    infinite: true,
+    speed: 1000,
+    fade: false,
+    draggable: true,
+    lazyLoad: 'ondemand',
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+
+});
+
+
 
 // $(".modal_gal-box").slick({
 //     slidesToShow: 1,

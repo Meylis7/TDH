@@ -101,8 +101,8 @@
 }
 
 .slick-next {
-    right: 15px;
     /* ============================================================ */
+    right: 15px;
 
     border-left: 3px solid #000;
     border-top: 3px solid #000;
@@ -160,6 +160,51 @@
     background-size: contain;
     z-index: 4;
     border: none;
+}
+
+.colleag_slider .slick-prev {
+    position: absolute;
+    top: 50%;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    left: 30px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: rotate(310deg) translateY(-50%);
+    z-index: 1;
+}
+
+.colleag_slider .slick-next {
+    position: absolute;
+    top: 43%;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    right: 30px;
+
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: rotate(135deg) translateY(-50%);
+    ;
 }
 
 
