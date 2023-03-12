@@ -2933,6 +2933,18 @@ footer {
         height: 135px;
     }
 
+    /* Colleag news ================== */
+    .colleag_slider {
+        padding: 25px 10px;
+    }
+
+    .colleag_slider .slick-prev,
+    .colleag_slider .slick-next {
+        display: none !important;
+    }
+
+    /* Colleag news end ============== */
+
 
     /* Website ================================== */
     .web_item {
@@ -3219,6 +3231,30 @@ footer {
     .mobile_input__wrap {
         width: 250px;
     }
+
+    /* Colleag news ================== */
+    .colleag_slider {
+        padding: 25px 35px;
+    }
+
+    .colleag_slider .slick-prev,
+    .colleag_slider .slick-next {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Colleag news end ============== */
+
+    /* Websites =========================== */
+    .web_item-photo {
+        height: 200px;
+    }
+
+    .web_slider-2 .web_item-photo {
+        height: 200px;
+    }
+
+    /* Websites end ======================= */
 }
 
 @media(max-width: 400px) {
