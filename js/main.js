@@ -66,7 +66,7 @@ window.onclick = function (e) {
         selectElement('.navs__inner').classList.remove('open');
     }
 
-    if (selectElement('.hidden__media').classList.contains('open')) {
+    if (selectElement('.hidden__media').classList.contains('open') && !e.target.closest('.nav_open_media')) {
         selectElement('.hidden__media').classList.remove('open');
     }
 
@@ -80,11 +80,21 @@ window.onclick = function (e) {
     // );
 
 
-    // if (selectElement('.player_bg').classList.contains('videoShow') && !e.target.closest('.player')) {
-    //     selectElement('.player_bg').classList.remove('videoShow');
-    //     selectElement('.player__video').pause();
-    //     selectElement('.player__video').currentTime = 0;
-    // }
+
+
+    if (selectElement('.player_bg') != undefined) {
+        if (selectElement('.player_bg').classList.contains('videoShow') && !e.target.closest('.player')) {
+            selectElement('.player_bg').classList.remove('videoShow');
+            selectElement('.player__video').pause();
+            selectElement('.player__video').currentTime = 0;
+        }
+    }
+
+    if (selectElement('.modal-photo') != undefined) {
+        if (selectElement('.modal-photo').classList.contains('active') && !e.target.closest('.modal_gal') && !e.target.closest('.owl-nav')) {
+            selectElement('.modal-photo').classList.remove('active');
+        }
+    }
 
     if (modal_video != undefined) {
         if (modal_video.classList.contains('active') && !e.target.closest('.modal_video-item video')) {
@@ -98,7 +108,6 @@ window.onclick = function (e) {
 function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
-
 
 
 
@@ -166,7 +175,6 @@ selectElement('.loupe').addEventListener('click', function () {
 
 
 selectElement('.new__hamburg').addEventListener('click', function () {
-    console.log("hello")
     sleep(2).then(() => {
         selectElement('.navs__back').classList.toggle('open');
     });
@@ -178,11 +186,11 @@ selectElement('.new__hamburg').addEventListener('click', function () {
     });
 });
 
-// selectElement('.nav_open_media').addEventListener('click', function () {
-//     sleep(2).then(() => {
-//         selectElement('.hidden__media').classList.toggle('open');
-//     });
-// });
+selectElement('.nav_open_media').addEventListener('click', function () {
+    sleep(2).then(() => {
+        selectElement('.hidden__media').classList.toggle('open');
+    });
+});
 
 selectElement('.mobile__close').addEventListener('click', function () {
     sleep(2).then(() => {

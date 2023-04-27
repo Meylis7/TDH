@@ -243,7 +243,7 @@ $(".web_slider").slick({
 $(".web_slider-2").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     dots: false,
     autoplaySpeed: 4500,
